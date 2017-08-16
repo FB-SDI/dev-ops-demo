@@ -41,6 +41,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 
 	@Bean (name ="mailSender")
 	public JavaMailSenderImpl getMailSender() {
+		// JavaMailSender Implementation
 		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
 		mailSender.setHost("smtpfor.uk.deloitte.com");
 		mailSender.setPort(25);
